@@ -1,0 +1,108 @@
+JS Interview Questions:
+Event loop:
+The event loop continuously checks whether the call stack is empty and, when it is, moves
+eligible callbacks from the task queues(Macro and Micro) into the call stack for execution. It
+allows JavaScript to perform asynchronous operations without blocking the main thread.
+Memoization: is the process of caching the output of the function calls so that subsequent calls
+are faster.
+Const memoize = fn => {
+Const cache = new Map();
+Return value => {
+Const cachedResult = cache.get(value)
+if(cachedResult !== undefined) return cachedResult
+Const result = fun(value)
+cache.set(value, result)
+Return result;
+}
+}
+//*********************************************************************
+Questions on Call bind apply (deep drilling). Create a polyfill of bind.
+Closures (cross questions with examples):
+"A closure is a function together with its lexical environment. When a function is returned or
+passed somewhere else, it can still access variables from the scope where it was created, even
+after that outer function has finished executing. Closures are commonly used for private state,
+data encapsulation, function factories, callbacks, and maintaining state.
+Example:
+- Private Counter
+function createCounter() {
+let count = 0;
+return function () {
+count++;
+return count;
+};
+}
+const counter = createCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3
+- One important use of closures is data privacy / encapsulation.
+function createBankAccount() {
+let balance = 1000;
+return {
+getBalance() {
+return balance;
+},
+deposit(amount) {
+balance += amount;
+}
+};
+}
+const account = createBankAccount();
+console.log(account.getBalance()); // 1000
+account.deposit(500);
+console.log(account.getBalance()); // 1500
+// You cannot directly access balance
+console.log(account.balance); // undefined
+Event bubbling and capturing (cross questions with examples)
+Service worker
+PWAs
+Semantic tag in html
+Preprocessor in css
+Position static
+Position fixed
+Critical rendering path:
+The Critical Rendering Path (CRP) is the sequence of steps the browser follows to turn your
+HTML, CSS, and JavaScript into pixels on the screen.
+More details?
+https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path
+//*************************************************************************
+How many number ways we can create Object?
+—-------------------------------------------------------------------------------------------
+Coding Questions
+● Output:
+async function test() {
+console.log(1);
+//asyc function will have to effect in javascript flow of execution
+//It will run asynchronously until it finds await keyword. Now it move the
+//the rest of the code of that async fun to MicroTask queue and will
+//continue the callstack execution. Once callstack is empty then, it will
+//first pick the tasks from MicroTask queue
+await Promise.resolve();
+console.log(2);
+}
+console.log(3);
+test();
+console.log(4);
+//Output:
+3
+1
+4
+2
+1. create an Array with 10 numbers and filter with the values divided by 2 then multiply with
+filtered value by 10
+—----------------------------------------
+How many times return function will run, if xyz changes 5 times through component props:
+useEffect(()=>{
+//fun
+const handleResize = ()=>{
+setWindowSize({width:
+window.innerWidth,
+height: window.innerHeight
+};
+}
+window.addEventListner("resize",handleResize);
+return ()=>window.removeEventListner("resize"));
+}
+,[xyz]);
+—-----------------------------------------------------------------
+Object.freeze() vs Object.seal()
