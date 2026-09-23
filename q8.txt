@@ -1,0 +1,33 @@
+executes asynchronous tasks concurrently with a maximum limit
+const mockFetch = (id, delay) => () =>
+  new Promise((resolve) => {
+    console.log(`[START] Task ${id} initiated...`);
+    setTimeout(() => {
+       console.log(`[DONE] Task ${id} finished`);
+        resolve(`Data from ${id}`);
+    }, delay);
+  });
+ 
+const tasks = [
+  mockFetch(1, 1000),
+  mockFetch(2, 2000),
+  mockFetch(3, 500),
+  mockFetch(4, 300),
+  mockFetch(5, 800)
+];
+ 
+throttleTasks(tasks, 2)
+ 
+ 
+Here are questions asked.
+Why is node.js why it is used, where we should not use.
+What is event loop.
+What is express, why to use express instead of nodejs
+What are middleware, which middle wares are commonly used
+Whay is multer used , how the file upload happens with multer. How you send and handle large file upload
+What is basic architecture of Kafka.
+How to handle error in kafka consumer.
+What are design patterns. explain single to and factory pattern
+What is ACID in db terms.
+How to avoid race conditions when we run multiple sql query to update the single row.
+ 
