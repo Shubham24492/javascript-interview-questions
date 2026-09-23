@@ -1,0 +1,140 @@
+SQLBolt - Learn SQL - SQL Review: Simple SELECT Queries
+SQLBolt provides a set of interactive lessons and exercises to help you learn SQL
+ 
+https://opportunistic-placement.azurewebsites.net/demands
+Opportunistic Placement
+ 
+Hello Shubham Sarwade bhai
+ 
+Hello Prem Kumar
+ 
+function outer() {
+  let count = 0;
+  function inner() {
+    count++;
+    console.log(count);
+  }
+  return inner;
+}
+ 
+const fn = outer();
+console.log(fn());
+console.log(fn());
+ 
+const fn2 = outer();
+console.log(fn2());
+}
+ 
+ 
+ 
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((res) => res.json())
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+try {
+  res1 = await fetch("https://jsonplaceholder.typicode");
+  if (res1.ok) {
+    res2 = await fetch("https://jsonplaceholder.typicode");
+  }
+ 
+  if (!res1.ok || !res2.ok) {
+    throw new Error("Api1 Failed");
+  }
+} catch (err) {
+  console.error(err);
+}
+ 
+How to do sequential and concurrent api calls
+ 
+what will be out put of this 
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+what will happen if we replace var with let keyword
+ 
+parent.addEventListener("click", () => {
+  console.log("parent");
+},true);
+child.addEventListener("click", () => {
+  console.log("child");
+});
+<divid="parent"><buttonid="child">Click me</button></div>
+Q. what will happen if we click on Parent div
+ 
+functionParent() {   const [count, setCount] =useState(0);   return (     <><buttononClick={() => setCount(count+1)}>        {count}       </button><Child/></>  ); }
+ Q what will be the output
+ 
+Given API: https://fakestoreapi.com/products, fetch and show the list of products from this api. After completing it, It was asked to created loading and error state(in case of failure).
+Tanstack query: What will happened if following query is executed in two components. Will it make 2 api calls to Backend?
+ 
+const { data } = useGetUsersQuery();
+ 
+What will be the behaviour if this query is used on some other component after some time( concept of stale time).
+ 
+Suppose we are using access token with API calls. What if access token is expired and BE returned 401 status code. How will you handle it?
+Have you ever work on authentication part e.g. Login. Explain how did you handle it?
+Axio client. Handle http interceptors
+SSR render. Concurrent rendering. Hydration
+Any React 19 feature you used.
+Reconcilliation
+ 
+usedebounce hook
+some custom hooks
+usememeo vs usecallback
+some more basics of react and Javascript. 
+performance improvement. 
+when to use redux when not. 
+ 
+--------------------------------------------------------------------
+OUTPUT OF: 
+ 
+ 
+console.log("A");
+ 
+setTimeout(() => {
+  console.log("B");
+}, 0);
+ 
+Promise.resolve().then(() => {
+  console.log("C");
+});
+ 
+console.log("D");
+ 
+---------------------------------------------------------------------------
+ What will be value of count rendered on UI, when button is clicked with handleClick event listner:
+ 
+const [count, setCount] = useState(0);
+ 
+function handleClick() {
+  setCount(count + 1);
+  setCount(prev => prev + 1);
+}
+
+-----------------------------------------------------------------------------------------------------
+Will Child re-render when button is click in App. If yes, then why, and how to fix it?
+ 
+const Child = React.memo(({ user }) => {
+  console.log("Child");
+  return <div>{user.name}</div>;
+});
+ 
+function App() {
+  const [count, setCount] = useState(0);
+ 
+  const user = {
+    name: "John"
+  };
+ 
+  return (
+<>
+<Child user={user} />
+ 
+      <button onClick={() => setCount(count + 1)}>
+        {count}
+</button>
+</>
+  );
+}
+ 
+ 
