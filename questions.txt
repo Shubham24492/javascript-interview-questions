@@ -1,0 +1,33 @@
+1.	Given API: https://fakestoreapi.com/products, fetch and show the list of products from this api. After completing it, It was asked to created loading and error state(in case of failure).
+
+2.	Tanstack query: What will happened if following query is executed in two components. Will it make 2 api calls to Backend?
+
+const { data } = useGetUsersQuery();
+
+What will be the behaviour if this query is used on some other component after some time( concept of stale time).
+
+3.	Suppose we are using access token with API calls. What if access token is expired and BE returned 401 status code. How will you handle it?
+4.	Have you ever work on authentication part e.g. Login. Explain how did you handle it?
+5.	Axio client. Handle http interceptors
+6.	Concurrent rendering: 
+7.	Any React 19 feature you used.
+
+8.	Reconciliation: 
+9.	ITTC.
+      Hydration---> Process to attach interactive. (How it works)
+10.	4. PDP, PLP pages, bots crawling.
+11.	6. Render stream
+12.	7. Render to string.
+13.	8. [Low priority] Google core vitals. and Lighthouse. LCP. CLS core.
+14.	How to avoid attack, 1000 user data, on system.
+15.	10. reCAPTCHA ---
+16.	 How to prevent XSS.
+17.	SSR, SSG
+18.	startTransition: The startTransition function lets you mark a state update as a Transition (non -urgent). The function passed to startTransition is called an “Action”.
+19.	What is React Reconciliation
+20.	Explain about Virtual DOM
+21.	Explain about Diffing Algorithm
+22.	Explain about Performance optimization hooks
+23.	Es6 Array Methods
+24.	Difference between Map and Filter
+25.	Create a table list Using React functional component with HTML Table element and get the data from API endpoint. Add possible error validation and loading scenarios
