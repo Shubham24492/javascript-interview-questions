@@ -1,0 +1,42 @@
+//useResize window size, resize the window => return height and width updated
+
+
+import React, {useState, useEffect} from 'react';
+
+
+const useResize = (a)=>{
+const [size, setSize] = useState({height: window.innerHeight, width: window.innerWidth});
+
+useEffect(()=>{
+	const hadleResize = () => {setSize({height: window.innerHeight, width: window.innerWidth})}
+	window.addEventListener('resize', hadleResize, true );
+	()=>{ window.removeEventListener('resize') }
+},[a])
+
+return size;
+}
+
+export default useResize;
+
+
+
+//bind => xyz.bind(args) 
+function myLogger = () => console.log('logger')
+
+const xyz = { name: 'shubham' }
+
+xyz.prototype.mybind = (fn)=> {
+return (args)=> {
+	fn(...args)
+}
+}
+
+const mylog = xyz.mybind(myLogger)
+mylog(a)
+
+
+<>alert1
+	<capturing>alert2
+		<>click()=>alert3
+
+alert2 => alert3
