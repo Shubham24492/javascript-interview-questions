@@ -1,12 +1,4 @@
-SQLBolt - Learn SQL - SQL Review: Simple SELECT Queries
-SQLBolt provides a set of interactive lessons and exercises to help you learn SQL
- 
-https://opportunistic-placement.azurewebsites.net/demands
-Opportunistic Placement
- 
-Hello Shubham Sarwade bhai
- 
-Hello Prem Kumar
+
  
 function outer() {
   let count = 0;
