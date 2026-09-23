@@ -1,0 +1,27 @@
+functionParent() {   const [count, setCount] =useState(0);   return (     <><buttononClick={() => setCount(count+1)}>        {count}       </button><Child/></>  ); }
+functionouter() {   letcount=0;   functioninner() {     count++;     console.log(count);   }   returninner; } constfn=outer();
+constfn2=outer();
+
+for (vari=0; i<3; i++) {   
+setTimeout(() => console.log(i), 100); 
+}
+
+parent.addEventListener("click", () => {   console.log("parent"); }); child.addEventListener("click", () => {   console.log("child"); });
+ 
+<divid="parent"><buttonid="child">Click me</button></div>
+ console.log("start");
+async function func1() {
+	console.log("inside func1");
+	await new Promise((resolve) => resolve("Promise in func1 resolved"))
+		.then(res => console.log(res));
+	console.log("exit func1");
+}
+function func2() {
+	console.log("inside func2");
+	func1();
+	new Promise((resolve) => resolve("Promise in func2 resolved"))
+		.then(res => console.log(res));
+	console.log("exit func2");
+}
+func2();
+console.log("end");
