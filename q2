@@ -1,0 +1,64 @@
+Closure
+event delegation
+Macro Task, MicroTask
+create an Array with 10 numbers and filter with the values divided by 2 then multiply with filtered value by 10
+async function test() {
+  console.log(1);
+  await Promise.resolve();
+  console.log(2);
+}
+console.log(3);
+test();
+console.log(4);
+---------------------------
+Authentication/ Axios client
+handle 401
+XSS
+CSRF
+reCAPTCHA
+-------------------------
+Redux
+Async thunk question
+saga question
+when to use redux when not.
+-----
+const [count, setCount] = useState(0);
+ 
+function handleClick() {
+  setCount(count + 1);
+  setCount(prev => prev + 1);
+}
+---------------
+const Child = React.memo(({ user }) => {
+  console.log("Child");
+  return <div>{user.name}</div>;
+});
+ 
+function App() {
+  const [count, setCount] = useState(0);
+ 
+  const user = {
+  name: "John"
+  };
+ 
+  return (
+<>
+<Child user={user} />
+ 
+  <button onClick={() => setCount(count + 1)}>
+  {count}
+</button>
+</>
+  );
+}
+--------------------
+Reconciliation
+Virtulization
+Performance
+React memo
+React lazy
+Concurrent rendering
+Debounce
+throttling
+Any React 19 feature you used.
+Tailwind css benefits
