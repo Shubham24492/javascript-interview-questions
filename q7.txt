@@ -1,0 +1,49 @@
+Project-Based Questions
+1.	Tell me about your previous project, the Storefront Reward Platform. Did you build it from scratch, or was it an existing application? How did you approach the development?
+2.	What was your exact role in the recent project you worked on? Did you build specific components, features, or modules? What were your key responsibilities?
+3.	Can you explain one of your favorite projects that you built from scratch?
+4.	The interviewer then asked several follow-up questions based on the project I described, including the architecture, implementation, challenges, responsibilities, and technical decisions involved.
+5.	Tell me about a time when you pushed a bug to the production environment. What happened, how did you identify it, and how did you resolve it?
+6.	Another interviewer also asked questions about my previous project, focusing on my individual contributions and technical responsibilities.
+Authentication & Security
+7.	What is JWT authentication? What exactly did you implement using JWT in your project?
+8.	How does authentication work? How did you design and implement the authentication solution in your project?
+9.	Suppose there are thousands of user records and someone tries to hack or abuse the system. How would you protect the application and prevent unauthorized access or attacks?
+10.	What is hCaptcha or reCAPTCHA? Why and where would you use it in an application?
+11.	What is Cross-Site Scripting (XSS)? How can you prevent XSS attacks in a web application?
+12.	What is the difference between innerHTML and textContent? When would you use each one?
+13.	What is dangerouslySetInnerHTML in React? What are its risks, and in which scenarios would you use it?
+14.	Where do you store the authentication token? What are the different approaches for storing tokens securely?
+15.	How can you store an authentication token on the client side? What are the security considerations for each approach?
+React & Frontend
+16.	What is useEffect in React? Why do we use it, and in which scenarios would you use it?
+17.	What is a dependency array in useEffect? How does it affect the execution of the effect?
+18.	What are useMemo and useCallback? What is the difference between them, and when would you use each one?
+19.	What are the drawbacks or potential disadvantages of using useMemo and useCallback?
+API Integration
+20.	What is an external API? Where and how do you call external APIs in a React application?
+
+
+L1 Interview Questions
+
+Q1:- React Concurrent rendering ?
+Q2:- Clousers in J.S ?
+Q3:- J.S is single thread or multi-thread ?
+Q4: -How can u handle Asynchronous operation in JS ?
+Q5: -  After that interviewer give some scenario based and output based questions – related to object, array and promises , setTimeOut . this,  get etc….
+Q6: - Microtask & Macrotask ?
+Q7 :- This keyword in Js ?
+Q8:- Bind function , Call function with example 
+Q9:-  Debounce & throttling ?
+Q10:- Interviewer asked me Related some debugging question ?
+Q11;- StartTransistion in react ?
+Q12 :-  React coding example –  related to parent & child component re-rendering occure ?
+Q13: -Types of routing in next.js ?
+Q14:- Diff b/w page & app routing ?
+Q15:- Server side rendering specific to next.js or react.js ?
+Q16 :- what is hydration ? ( Deep details --  around 4-5 question based on my answer)
+Q17:- SSR & SSG 
+Q18:- Event listner ?
+Q19:- Also he asked me about the folder structure of Page router  or App router (static & dynamic both)
+Q20 :- Redux & toolkit ?
+Q21: - Slice component ? (Deep knowledge required because again 4-5 question based on your answer)
