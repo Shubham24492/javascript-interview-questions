@@ -106,3 +106,43 @@ return ()=>window.removeEventListner("resize"));
 ,[xyz]);
 —-----------------------------------------------------------------
 Object.freeze() vs Object.seal()
+
+
+function createBankAccount() {
+let balance = 1000;
+return {
+getBalance() {
+return balance;
+},
+deposit(amount) {
+balance += amount;
+}
+};
+}
+const account = createBankAccount();
+console.log(account.getBalance()); // 1000
+account.deposit(500);
+console.log(account.getBalance()); // 1500
+// You cannot directly access balance
+console.log(account.balance); // undefined
+
+
+-----------------------------------------------------------------
+async function test() {
+console.log(1);
+//asyc function will have to effect in javascript flow of execution
+//It will run asynchronously until it finds await keyword. Now it move the
+//the rest of the code of that async fun to MicroTask queue and will
+//continue the callstack execution. Once callstack is empty then, it will
+//first pick the tasks from MicroTask queue
+await Promise.resolve();
+console.log(2);
+}
+console.log(3);
+test();
+console.log(4);
+//Output:
+3
+1
+4
+2
