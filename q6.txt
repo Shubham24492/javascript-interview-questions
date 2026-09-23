@@ -1,0 +1,76 @@
+Write a JavaScript function that:
+Considers only transactions with status COMPLETED.
+Calculates total revenue for every seller.
+Calculates the total completed quantity for every seller.
+Identifies the seller with the highest revenue.
+Returns sellers sorted by revenue from highest to lowest.
+Does not mutate the original transactions array.
+
+const transactions = [
+  {
+    sellerId: "S1",
+    productId: "P1",
+    quantity: 3,
+    price: 100,
+    status: "COMPLETED"
+  },
+  {
+    sellerId: "S2",
+    productId: "P2",
+    quantity: 2,
+    price: 300,
+    status: "COMPLETED"
+  },
+  {
+    sellerId: "S1",
+    productId: "P3",
+    quantity: 5,
+    price: 50,
+    status: "CANCELLED"
+  },
+  {
+    sellerId: "S1",
+    productId: "P1",
+    quantity: 4,
+    price: 100,
+    status: "COMPLETED"
+  },
+  {
+    sellerId: "S3",
+    productId: "P4",
+    quantity: 1,
+    price: 1000,
+    status: "COMPLETED"
+  },
+  {
+    sellerId: "S2",
+    productId: "P2",
+    quantity: 1,
+    price: 300,
+    status: "RETURNED"
+  },
+  {
+    sellerId: "S2",
+    productId: "P5",
+    quantity: 6,
+    price: 80,
+    status: "COMPLETED"
+  }
+];
+ 
+Output
+ 
+{
+  sellers: [
+    {
+      sellerId: "S3",
+      revenue: 1000,
+      totalQuantity: 1
+    }
+  ],
+  topSeller: {
+    sellerId: "S3",
+    revenue: 1000,
+    totalQuantity: 1
+  }
+}
