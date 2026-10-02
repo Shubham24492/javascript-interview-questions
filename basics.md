@@ -30,6 +30,7 @@ const reverseString = (str)=> {
 console.log(reverseString('shubham'))
 //"mahbuhs"
 
+***Write a Program to check whether a string is a palindrome string.***
 const isPalindrome = (str) => {
   return str === str.split("").reverse().join("")
 }
