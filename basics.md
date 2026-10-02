@@ -74,3 +74,25 @@ console.log(1 + '2');
 
 console.log('6' - 1);
 //5
+
+console.log(1 === '1');
+//false
+
+console.log(null == undefined);
+//true'
+
+--------------------------------------------------------------------------------------
+***Write a Program to find a sum of an array?***
+function sumOfArray (arr) {
+  return arr.reduce((acc, cur)=> {
+    return acc + cur
+  },0)
+}
+
+console.log(sumOfArray([15, 6, 10, 2]));
+//33
+
+--------------------------------------------------------------------------------------
+
+
+
