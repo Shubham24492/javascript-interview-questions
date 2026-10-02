@@ -41,7 +41,7 @@ console.log(isPalindrome('nitin'))
 //false
 //true
 
-
+**Find the largest number in an array in JavaScript.**
 function findLargestNumber(arr) {
 let largest = arr[0];
 
