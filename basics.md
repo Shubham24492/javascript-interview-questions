@@ -22,7 +22,7 @@ answer
   u: 1
 }*/
 
-***Reverse string***
+***Write a Program to reverse a string in JavaScript.***
 const reverseString = (str)=> {
   return str.split("").reverse().join("")
 }
