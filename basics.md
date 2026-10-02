@@ -55,7 +55,22 @@ for (let i=1; i<arr.length; i++){
 return largest
 }
 
+function findLargestNumber(arr) {
+return Math.max(...arr)
+}
+
 console.log(findLargestNumber([99, 5, 3, 100, 1]));
 //asnwer 100
 ----------------------------------------------------------------------------------
 
+console.log([1, 2, 3].reduce((a, b) => a + b));
+//6
+
+console.log('gfg'.repeat(3));
+//"gfggfggfg"
+
+console.log(1 + '2');
+//12
+
+console.log('6' - 1);
+//5
