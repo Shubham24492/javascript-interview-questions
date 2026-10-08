@@ -1,0 +1,124 @@
+let count =1;
+function counter() {
+	
+  
+  function increment (){
+  	return count += 1
+  }
+  retun increment
+}
+
+
+const original = {
+  name: "Gaurav",
+  address: {
+    city: "Pune"
+  }
+};
+
+const copy = { ...original };
+
+copy.name = "Rahul";
+copy.address.city = "Mumbai";
+
+console.log(original.name);         
+console.log(original.address.city);
+
+
+
+
+console.log('Start');
+async function async1() {
+console.log('Async1 Start');
+await async2();
+console.log('Async1 End');
+}
+async function async2() {
+console.log('Async2');
+}
+async1();
+setTimeout(() => console.log('Timeout'), 0);
+console.log('End');	Async1 Start			
+
+
+
+
+
+
+start
+Async1 Start
+Async1 End
+End
+Timeout
+Async2
+
+
+From give array find the 2nd highest freq element
+
+[1, 4, 4, 4, 4,3, 3, 3, 2, 2]
+
+
+
+
+i/p
+Flat Obj
+
+const obj = {
+  name: "Gaurav",
+  address: {
+    city: "Pune",
+    location: {
+      pin: 411033
+    }
+  }
+};
+
+
+o/p:
+
+{
+  name: "Gaurav,
+  "address.city": "Pune",
+  "address.location.pin": 411033
+}
+
+
+
+
+useEffect(async () => {
+  const response = await fetch("/api/users");
+  const data = await response.json();
+  setUsers(data);
+}, []);
+
+
+
+
+
+
+const obj = {
+  name: "Gaurav",
+  address: {
+    city: "Pune",
+    location: {
+      pin: 411033
+    }
+  }
+};
+
+function falttenObj(obj){
+  let flatObj = {}
+  for(let prop in obj)
+  {
+    if(Object.is){
+      
+    }
+  }
+  
+}
+
+// {
+//   name: "Gaurav,
+//   ""address.city"": ""Pune",
+//   ""address.location.pin"": 411033
+// }
