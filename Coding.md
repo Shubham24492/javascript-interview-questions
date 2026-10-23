@@ -26,7 +26,7 @@ export default function App() {
     </div>
   );
 }```
-
+---------------------------------------------------------------------------
 *** Create a counter with increment, decrement, and reset ***
 ```
 import React from 'react';
