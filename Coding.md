@@ -1,6 +1,6 @@
 ***Q1. Build a progress bar that increases by 20% every second and resets***
 
-import React from 'react';
+```import React from 'react';
 
 export default function App() {
   const [state, setState] = React.useState(0);
@@ -25,4 +25,4 @@ export default function App() {
         </div>
     </div>
   );
-}
+}```
