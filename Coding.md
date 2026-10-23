@@ -49,8 +49,9 @@ export default function App() {
 }
 
 ```
+***Implement a custom useToggle hook***
 
-
+```
 import React, { useState } from 'react';
 
 function useToogle(initialValue) {
@@ -60,8 +61,7 @@ function useToogle(initialValue) {
 
   return [toggle, handleToggle];
 }
-***Implement a custom useToggle hook***
-```export default function App() {
+export default function App() {
   const [toggle, handleToggle] = useToogle(false);
   console.log(toggle);
   return (
@@ -72,5 +72,6 @@ function useToogle(initialValue) {
       </div>
     </div>
   );
-}```
+}
+```
 
