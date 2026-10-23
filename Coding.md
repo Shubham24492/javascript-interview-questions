@@ -26,3 +26,24 @@ export default function App() {
     </div>
   );
 }```
+
+*** Create a counter with increment, decrement, and reset ***
+```
+import React from 'react';
+
+export default function App() {
+  const [counter, setCounter] = React.useState(0);
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', margin: '20px' }}>
+      Counter = {counter}
+      <div>
+        <button onClick={() => setCounter((prev) => prev + 1)}> + </button>
+        <button onClick={() => setCounter((prev) => prev - 1)}> - </button>
+        <button onClick={() => setCounter(0)}> Reset </button>
+      </div>
+    </div>
+  );
+}
+
+```
