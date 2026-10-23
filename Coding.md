@@ -48,3 +48,28 @@ export default function App() {
 }
 
 ```
+
+
+import React, { useState } from 'react';
+
+function useToogle(initialValue) {
+  const [toggle, setToggle] = useState(initialValue);
+
+  const handleToggle = () => setToggle((toggle) => !toggle);
+
+  return [toggle, handleToggle];
+}
+***Implement a custom useToggle hook***
+```export default function App() {
+  const [toggle, handleToggle] = useToogle(false);
+  console.log(toggle);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', margin: '20px' }}>
+      Toggle = {String(toggle)}
+      <div>
+        <button onClick={() => handleToggle()}> Toggle </button>
+      </div>
+    </div>
+  );
+}```
+
