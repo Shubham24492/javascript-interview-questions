@@ -1,4 +1,4 @@
-***Q1. Build a progress bar that increases by 20% every second and resets***
+**Q1. Build a progress bar that increases by 20% every second and resets**
 
 ```import React from 'react';
 
@@ -27,7 +27,8 @@ export default function App() {
   );
 }```
 ---------------------------------------------------------------------------
-*** Create a counter with increment, decrement, and reset ***
+## Q2
+** Create a counter with increment, decrement, and reset **
 ```
 import React from 'react';
 
