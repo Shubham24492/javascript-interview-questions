@@ -75,3 +75,38 @@ export default function App() {
 }
 ```
 
+
+```
+Implement a custom useDebounce hook
+import React, { useState, useEffect } from 'react';
+
+function useDebounce(value, delay) {
+  const [debounce, setDebounce] =  useState(value);
+
+  useEffect(()=> {
+    const timer = setTimeout(()=> {
+      setDebounce(value)
+    }, delay),
+    return ()=>{clearTimeout(timer)}
+  }, [value, delay])
+
+  return [debounce]
+}
+
+export default function App() {
+  const [query, setQuery] = useState("");
+  const debouncedQuery = useDebounce(query, 5000);
+
+  return (
+    <div>
+      <input
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+        placeholder="Search..."
+      />
+      <p>Search value: {debouncedQuery}</p>
+    </div>
+  );
+}
+
+```
